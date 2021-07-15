@@ -1676,12 +1676,12 @@
 #define HAVE_aarch64_fcmlaq_lane90v4sf (TARGET_COMPLEX)
 #define HAVE_aarch64_fcmlaq_lane180v4sf (TARGET_COMPLEX)
 #define HAVE_aarch64_fcmlaq_lane270v4sf (TARGET_COMPLEX)
-#define HAVE_aarch64_sdotv8qi (TARGET_DOTPROD)
-#define HAVE_aarch64_udotv8qi (TARGET_DOTPROD)
-#define HAVE_aarch64_sdotv16qi (TARGET_DOTPROD)
-#define HAVE_aarch64_udotv16qi (TARGET_DOTPROD)
-#define HAVE_aarch64_usdotv8qi (TARGET_I8MM)
-#define HAVE_aarch64_usdotv16qi (TARGET_I8MM)
+#define HAVE_sdot_prodv8qi (TARGET_DOTPROD)
+#define HAVE_udot_prodv8qi (TARGET_DOTPROD)
+#define HAVE_sdot_prodv16qi (TARGET_DOTPROD)
+#define HAVE_udot_prodv16qi (TARGET_DOTPROD)
+#define HAVE_usdot_prodv8qi (TARGET_I8MM)
+#define HAVE_usdot_prodv16qi (TARGET_I8MM)
 #define HAVE_aarch64_sdot_lanev8qi (TARGET_DOTPROD)
 #define HAVE_aarch64_udot_lanev8qi (TARGET_DOTPROD)
 #define HAVE_aarch64_sdot_lanev16qi (TARGET_DOTPROD)
@@ -5345,7 +5345,7 @@
 #define HAVE_aarch64_udot_prod_lanevnx16qi (TARGET_SVE)
 #define HAVE_aarch64_sdot_prod_lanevnx8hi (TARGET_SVE)
 #define HAVE_aarch64_udot_prod_lanevnx8hi (TARGET_SVE)
-#define HAVE_aarch64_usdot_prodvnx16qi (TARGET_SVE_I8MM)
+#define HAVE_usdot_prodvnx16qi (TARGET_SVE_I8MM)
 #define HAVE_aarch64_usdot_prod_lanevnx16qi (TARGET_SVE_I8MM)
 #define HAVE_aarch64_sudot_prod_lanevnx16qi (TARGET_SVE_I8MM)
 #define HAVE_aarch64_sve_add_smatmulvnx16qi (TARGET_SVE_I8MM)
@@ -7217,10 +7217,6 @@
 #define HAVE_cmul_conjv4sf3 (TARGET_COMPLEX && !BYTES_BIG_ENDIAN)
 #define HAVE_cmulv2df3 (TARGET_COMPLEX && !BYTES_BIG_ENDIAN)
 #define HAVE_cmul_conjv2df3 (TARGET_COMPLEX && !BYTES_BIG_ENDIAN)
-#define HAVE_sdot_prodv8qi (TARGET_DOTPROD)
-#define HAVE_udot_prodv8qi (TARGET_DOTPROD)
-#define HAVE_sdot_prodv16qi (TARGET_DOTPROD)
-#define HAVE_udot_prodv16qi (TARGET_DOTPROD)
 #define HAVE_copysignv4hf3 ((TARGET_FLOAT && TARGET_SIMD) && (TARGET_SIMD_F16INST))
 #define HAVE_copysignv8hf3 ((TARGET_FLOAT && TARGET_SIMD) && (TARGET_SIMD_F16INST))
 #define HAVE_copysignv2sf3 (TARGET_FLOAT && TARGET_SIMD)
@@ -10920,12 +10916,12 @@ extern rtx        gen_aarch64_fcmlaq_lane0v4sf                       (rtx, rtx, 
 extern rtx        gen_aarch64_fcmlaq_lane90v4sf                      (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_aarch64_fcmlaq_lane180v4sf                     (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_aarch64_fcmlaq_lane270v4sf                     (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_aarch64_sdotv8qi                               (rtx, rtx, rtx, rtx);
-extern rtx        gen_aarch64_udotv8qi                               (rtx, rtx, rtx, rtx);
-extern rtx        gen_aarch64_sdotv16qi                              (rtx, rtx, rtx, rtx);
-extern rtx        gen_aarch64_udotv16qi                              (rtx, rtx, rtx, rtx);
-extern rtx        gen_aarch64_usdotv8qi                              (rtx, rtx, rtx, rtx);
-extern rtx        gen_aarch64_usdotv16qi                             (rtx, rtx, rtx, rtx);
+extern rtx        gen_sdot_prodv8qi                                  (rtx, rtx, rtx, rtx);
+extern rtx        gen_udot_prodv8qi                                  (rtx, rtx, rtx, rtx);
+extern rtx        gen_sdot_prodv16qi                                 (rtx, rtx, rtx, rtx);
+extern rtx        gen_udot_prodv16qi                                 (rtx, rtx, rtx, rtx);
+extern rtx        gen_usdot_prodv8qi                                 (rtx, rtx, rtx, rtx);
+extern rtx        gen_usdot_prodv16qi                                (rtx, rtx, rtx, rtx);
 extern rtx        gen_aarch64_sdot_lanev8qi                          (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_aarch64_udot_lanev8qi                          (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_aarch64_sdot_lanev16qi                         (rtx, rtx, rtx, rtx, rtx);
@@ -16343,7 +16339,7 @@ extern rtx        gen_aarch64_sdot_prod_lanevnx16qi                  (rtx, rtx, 
 extern rtx        gen_aarch64_udot_prod_lanevnx16qi                  (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_aarch64_sdot_prod_lanevnx8hi                   (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_aarch64_udot_prod_lanevnx8hi                   (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_aarch64_usdot_prodvnx16qi                      (rtx, rtx, rtx, rtx);
+extern rtx        gen_usdot_prodvnx16qi                              (rtx, rtx, rtx, rtx);
 extern rtx        gen_aarch64_usdot_prod_lanevnx16qi                 (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_aarch64_sudot_prod_lanevnx16qi                 (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_aarch64_sve_add_smatmulvnx16qi                 (rtx, rtx, rtx, rtx);
@@ -18356,10 +18352,6 @@ extern rtx        gen_cmulv4sf3                                      (rtx, rtx, 
 extern rtx        gen_cmul_conjv4sf3                                 (rtx, rtx, rtx);
 extern rtx        gen_cmulv2df3                                      (rtx, rtx, rtx);
 extern rtx        gen_cmul_conjv2df3                                 (rtx, rtx, rtx);
-extern rtx        gen_sdot_prodv8qi                                  (rtx, rtx, rtx, rtx);
-extern rtx        gen_udot_prodv8qi                                  (rtx, rtx, rtx, rtx);
-extern rtx        gen_sdot_prodv16qi                                 (rtx, rtx, rtx, rtx);
-extern rtx        gen_udot_prodv16qi                                 (rtx, rtx, rtx, rtx);
 extern rtx        gen_copysignv4hf3                                  (rtx, rtx, rtx);
 extern rtx        gen_copysignv8hf3                                  (rtx, rtx, rtx);
 extern rtx        gen_copysignv2sf3                                  (rtx, rtx, rtx);
