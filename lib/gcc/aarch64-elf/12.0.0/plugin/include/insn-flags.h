@@ -207,7 +207,6 @@
 #define HAVE_aarch64_crc32cx (TARGET_CRC32)
 #define HAVE_csinc3si_insn 1
 #define HAVE_csinc3di_insn 1
-#define HAVE_csneg3_uxtw_insn 1
 #define HAVE_csneg3si_insn 1
 #define HAVE_csneg3di_insn 1
 #define HAVE_aarch64_uqdecsi (TARGET_SVE)
@@ -3858,15 +3857,14 @@
 #define HAVE_aarch64_ld4v4bf_dreg (TARGET_SIMD)
 #define HAVE_aarch64_ld4di_dreg (TARGET_SIMD)
 #define HAVE_aarch64_ld4df_dreg (TARGET_SIMD)
-#define HAVE_aarch64_tbl1v8qi (TARGET_SIMD)
-#define HAVE_aarch64_tbl1v16qi (TARGET_SIMD)
-#define HAVE_aarch64_tbx1v8qi (TARGET_SIMD)
-#define HAVE_aarch64_tbx1v16qi (TARGET_SIMD)
-#define HAVE_aarch64_tbl2v16qi (TARGET_SIMD)
-#define HAVE_aarch64_tbl3v8qi (TARGET_SIMD)
-#define HAVE_aarch64_tbl3v16qi (TARGET_SIMD)
-#define HAVE_aarch64_tbx4v8qi (TARGET_SIMD)
-#define HAVE_aarch64_tbx4v16qi (TARGET_SIMD)
+#define HAVE_aarch64_qtbl1v8qi (TARGET_SIMD)
+#define HAVE_aarch64_qtbl1v16qi (TARGET_SIMD)
+#define HAVE_aarch64_qtbx1v8qi (TARGET_SIMD)
+#define HAVE_aarch64_qtbx1v16qi (TARGET_SIMD)
+#define HAVE_aarch64_qtbl2v8qi (TARGET_SIMD)
+#define HAVE_aarch64_qtbl2v16qi (TARGET_SIMD)
+#define HAVE_aarch64_qtbx2v8qi (TARGET_SIMD)
+#define HAVE_aarch64_qtbx2v16qi (TARGET_SIMD)
 #define HAVE_aarch64_qtbl3v8qi (TARGET_SIMD)
 #define HAVE_aarch64_qtbl3v16qi (TARGET_SIMD)
 #define HAVE_aarch64_qtbx3v8qi (TARGET_SIMD)
@@ -10225,7 +10223,6 @@ extern rtx        gen_aarch64_crc32cw                                (rtx, rtx, 
 extern rtx        gen_aarch64_crc32cx                                (rtx, rtx, rtx);
 extern rtx        gen_csinc3si_insn                                  (rtx, rtx, rtx, rtx);
 extern rtx        gen_csinc3di_insn                                  (rtx, rtx, rtx, rtx);
-extern rtx        gen_csneg3_uxtw_insn                               (rtx, rtx, rtx, rtx);
 extern rtx        gen_csneg3si_insn                                  (rtx, rtx, rtx, rtx);
 extern rtx        gen_csneg3di_insn                                  (rtx, rtx, rtx, rtx);
 extern rtx        gen_aarch64_uqdecsi                                (rtx, rtx, rtx);
@@ -13070,15 +13067,14 @@ extern rtx        gen_aarch64_ld4v2sf_dreg                           (rtx, rtx);
 extern rtx        gen_aarch64_ld4v4bf_dreg                           (rtx, rtx);
 extern rtx        gen_aarch64_ld4di_dreg                             (rtx, rtx);
 extern rtx        gen_aarch64_ld4df_dreg                             (rtx, rtx);
-extern rtx        gen_aarch64_tbl1v8qi                               (rtx, rtx, rtx);
-extern rtx        gen_aarch64_tbl1v16qi                              (rtx, rtx, rtx);
-extern rtx        gen_aarch64_tbx1v8qi                               (rtx, rtx, rtx, rtx);
-extern rtx        gen_aarch64_tbx1v16qi                              (rtx, rtx, rtx, rtx);
-extern rtx        gen_aarch64_tbl2v16qi                              (rtx, rtx, rtx);
-extern rtx        gen_aarch64_tbl3v8qi                               (rtx, rtx, rtx);
-extern rtx        gen_aarch64_tbl3v16qi                              (rtx, rtx, rtx);
-extern rtx        gen_aarch64_tbx4v8qi                               (rtx, rtx, rtx, rtx);
-extern rtx        gen_aarch64_tbx4v16qi                              (rtx, rtx, rtx, rtx);
+extern rtx        gen_aarch64_qtbl1v8qi                              (rtx, rtx, rtx);
+extern rtx        gen_aarch64_qtbl1v16qi                             (rtx, rtx, rtx);
+extern rtx        gen_aarch64_qtbx1v8qi                              (rtx, rtx, rtx, rtx);
+extern rtx        gen_aarch64_qtbx1v16qi                             (rtx, rtx, rtx, rtx);
+extern rtx        gen_aarch64_qtbl2v8qi                              (rtx, rtx, rtx);
+extern rtx        gen_aarch64_qtbl2v16qi                             (rtx, rtx, rtx);
+extern rtx        gen_aarch64_qtbx2v8qi                              (rtx, rtx, rtx, rtx);
+extern rtx        gen_aarch64_qtbx2v16qi                             (rtx, rtx, rtx, rtx);
 extern rtx        gen_aarch64_qtbl3v8qi                              (rtx, rtx, rtx);
 extern rtx        gen_aarch64_qtbl3v16qi                             (rtx, rtx, rtx);
 extern rtx        gen_aarch64_qtbx3v8qi                              (rtx, rtx, rtx, rtx);
