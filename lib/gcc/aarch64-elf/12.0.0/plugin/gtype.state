@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.0 20210727 (experimental)")
+(!version  "12.0.0 20210729 (experimental)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 227 0
@@ -28668,19 +28668,19 @@
   nil 0 nil nil )
  
  (!type struct 2084 nil  gc_pointed_to "source_location_table_entry"
-  (!srcfileloc  "cp/cp-gimplify.c" 2897)
+  (!srcfileloc  "cp/cp-gimplify.c" 2893)
   (!fields 3 
    (!pair  "loc"
     (!type already_seen 2)
-    (!srcfileloc  "cp/cp-gimplify.c" 2894)
+    (!srcfileloc  "cp/cp-gimplify.c" 2890)
     nil )
    (!pair  "uid"
     (!type already_seen 2)
-    (!srcfileloc  "cp/cp-gimplify.c" 2895)
+    (!srcfileloc  "cp/cp-gimplify.c" 2891)
     nil )
    (!pair  "var"
     (!type already_seen 23)
-    (!srcfileloc  "cp/cp-gimplify.c" 2896)
+    (!srcfileloc  "cp/cp-gimplify.c" 2892)
     nil )
   )
   (!options 
@@ -28689,7 +28689,7 @@
   516 nil nil )
  
  (!type struct 2085 nil  gc_used "source_location_table_entry_hash"
-  (!srcfileloc  "cp/cp-gimplify.c" 2973)
+  (!srcfileloc  "cp/cp-gimplify.c" 2969)
   (!fields 0 )
   nil 516 nil nil )
  
@@ -28698,11 +28698,11 @@
    (!type already_seen 2086)
   )
   gc_pointed_to "hash_table<source_location_table_entry_hash>"
-  (!srcfileloc  "cp/cp-gimplify.c" 2973)
+  (!srcfileloc  "cp/cp-gimplify.c" 2969)
   (!fields 1 
    (!pair  "source_location_table_entry_hash"
     (!type already_seen 2085)
-    (!srcfileloc  "cp/cp-gimplify.c" 2973)
+    (!srcfileloc  "cp/cp-gimplify.c" 2969)
     nil )
   )
  )
@@ -30922,11 +30922,11 @@
   nil )
  (!pair  "source_location_table_entry_hash"
   (!type already_seen 2085)
-  (!srcfileloc  "cp/cp-gimplify.c" 2973)
+  (!srcfileloc  "cp/cp-gimplify.c" 2969)
   nil )
  (!pair  "hash_table<source_location_table_entry_hash>"
   (!type already_seen 2086)
-  (!srcfileloc  "cp/cp-gimplify.c" 2973)
+  (!srcfileloc  "cp/cp-gimplify.c" 2969)
   nil )
  (!pair  "coroutine_info_hasher"
   (!type already_seen 2066)
@@ -35437,11 +35437,11 @@
   nil )
  (!pair  "source_location_id"
   (!type already_seen 2)
-  (!srcfileloc  "cp/cp-gimplify.c" 2975)
+  (!srcfileloc  "cp/cp-gimplify.c" 2971)
   nil )
  (!pair  "source_location_table"
   (!type already_seen 2087)
-  (!srcfileloc  "cp/cp-gimplify.c" 2974)
+  (!srcfileloc  "cp/cp-gimplify.c" 2970)
   nil )
  (!pair  "fold_cache"
   (!type already_seen 390)
@@ -36029,7 +36029,7 @@
   nil )
  (!pair  "alloc_object_size_limit"
   (!type already_seen 23)
-  (!srcfileloc  "calls.c" 1226)
+  (!srcfileloc  "calls.c" 1227)
   nil )
  (!pair  "internal_fn_fnspec_array"
   (!type array 2360 nil  gc_used "IFN_LAST + 1" 
@@ -36150,13 +36150,13 @@
   nil )
  (!pair  "aarch64_sls_shared_thunks_needed"
   (!type already_seen 2)
-  (!srcfileloc  "config/aarch64/aarch64.c" 25337)
+  (!srcfileloc  "config/aarch64/aarch64.c" 25345)
   nil )
  (!pair  "aarch64_sls_shared_thunks"
   (!type array 2364 nil  gc_used "30" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "config/aarch64/aarch64.c" 25336)
+  (!srcfileloc  "config/aarch64/aarch64.c" 25344)
   nil )
  (!pair  "va_list_type"
   (!type already_seen 23)
