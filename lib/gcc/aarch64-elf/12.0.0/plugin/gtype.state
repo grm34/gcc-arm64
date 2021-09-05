@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.0 20210903 (experimental)")
+(!version  "12.0.0 20210905 (experimental)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 226 0
@@ -18149,30 +18149,30 @@
   nil 1023 nil nil )
  
  (!type struct 920 nil  gc_unused "tree_cache_traits"
-  (!srcfileloc  "tree.h" 5570)
+  (!srcfileloc  "tree.h" 5588)
   (!fields 0 )
   nil 1023 nil nil )
  
  (!type user_struct 921 nil  gc_unused "hash_map<tree,tree,tree_cache_traits>"
-  (!srcfileloc  "tree.h" 5570)
+  (!srcfileloc  "tree.h" 5588)
   (!fields 3 
    (!pair  "tree_cache_traits"
     (!type already_seen 920)
-    (!srcfileloc  "tree.h" 5570)
+    (!srcfileloc  "tree.h" 5588)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "tree.h" 5570)
+    (!srcfileloc  "tree.h" 5588)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "tree.h" 5570)
+    (!srcfileloc  "tree.h" 5588)
     nil )
   )
  )
  
  (!type struct 922 nil  gc_used "decl_tree_cache_traits"
-  (!srcfileloc  "tree.h" 5576)
+  (!srcfileloc  "tree.h" 5594)
   (!fields 0 )
   nil 1023 nil nil )
  
@@ -18181,25 +18181,25 @@
    (!type already_seen 923)
   )
   gc_pointed_to "hash_map<tree,tree,decl_tree_cache_traits>"
-  (!srcfileloc  "tree.h" 5576)
+  (!srcfileloc  "tree.h" 5594)
   (!fields 3 
    (!pair  "decl_tree_cache_traits"
     (!type already_seen 922)
-    (!srcfileloc  "tree.h" 5576)
+    (!srcfileloc  "tree.h" 5594)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "tree.h" 5576)
+    (!srcfileloc  "tree.h" 5594)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "tree.h" 5576)
+    (!srcfileloc  "tree.h" 5594)
     nil )
   )
  )
  
  (!type struct 925 nil  gc_used "type_tree_cache_traits"
-  (!srcfileloc  "tree.h" 5582)
+  (!srcfileloc  "tree.h" 5600)
   (!fields 0 )
   nil 1023 nil nil )
  
@@ -18208,25 +18208,25 @@
    (!type already_seen 926)
   )
   gc_pointed_to "hash_map<tree,tree,type_tree_cache_traits>"
-  (!srcfileloc  "tree.h" 5582)
+  (!srcfileloc  "tree.h" 5600)
   (!fields 3 
    (!pair  "type_tree_cache_traits"
     (!type already_seen 925)
-    (!srcfileloc  "tree.h" 5582)
+    (!srcfileloc  "tree.h" 5600)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "tree.h" 5582)
+    (!srcfileloc  "tree.h" 5600)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "tree.h" 5582)
+    (!srcfileloc  "tree.h" 5600)
     nil )
   )
  )
  
  (!type struct 928 nil  gc_used "decl_tree_traits"
-  (!srcfileloc  "tree.h" 5587)
+  (!srcfileloc  "tree.h" 5605)
   (!fields 0 )
   nil 1023 nil nil )
  
@@ -18235,25 +18235,25 @@
    (!type already_seen 929)
   )
   gc_pointed_to "hash_map<tree,tree,decl_tree_traits>"
-  (!srcfileloc  "tree.h" 5587)
+  (!srcfileloc  "tree.h" 5605)
   (!fields 3 
    (!pair  "decl_tree_traits"
     (!type already_seen 928)
-    (!srcfileloc  "tree.h" 5587)
+    (!srcfileloc  "tree.h" 5605)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "tree.h" 5587)
+    (!srcfileloc  "tree.h" 5605)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "tree.h" 5587)
+    (!srcfileloc  "tree.h" 5605)
     nil )
   )
  )
  
  (!type struct 931 nil  gc_unused "unextended_tree"
-  (!srcfileloc  "tree.h" 5935)
+  (!srcfileloc  "tree.h" 5953)
   (!fields 0 )
   nil 1023 nil nil )
  
@@ -18262,77 +18262,77 @@
   nil 0 nil nil )
  
  (!type user_struct 933 nil  gc_unused "extended_tree<WIDE_INT_MAX_PRECISION>"
-  (!srcfileloc  "tree.h" 5915)
+  (!srcfileloc  "tree.h" 5933)
   (!fields 1 
    (!pair  "WIDE_INT_MAX_PRECISION"
     (!type already_seen 853)
-    (!srcfileloc  "tree.h" 5915)
+    (!srcfileloc  "tree.h" 5933)
     nil )
   )
  )
  
  (!type user_struct 934 nil  gc_unused "extended_tree<ADDR_MAX_PRECISION>"
-  (!srcfileloc  "tree.h" 5916)
+  (!srcfileloc  "tree.h" 5934)
   (!fields 1 
    (!pair  "ADDR_MAX_PRECISION"
     (!type already_seen 853)
-    (!srcfileloc  "tree.h" 5916)
+    (!srcfileloc  "tree.h" 5934)
     nil )
   )
  )
  
  (!type user_struct 935 nil  gc_unused "generic_wide_int<widest_extended_tree>"
-  (!srcfileloc  "tree.h" 5918)
+  (!srcfileloc  "tree.h" 5936)
   (!fields 1 
    (!pair  "widest_extended_tree"
     (!type already_seen 933)
-    (!srcfileloc  "tree.h" 5918)
+    (!srcfileloc  "tree.h" 5936)
     nil )
   )
  )
  
  (!type user_struct 936 nil  gc_unused "generic_wide_int<offset_extended_tree>"
-  (!srcfileloc  "tree.h" 5919)
+  (!srcfileloc  "tree.h" 5937)
   (!fields 1 
    (!pair  "offset_extended_tree"
     (!type already_seen 934)
-    (!srcfileloc  "tree.h" 5919)
+    (!srcfileloc  "tree.h" 5937)
     nil )
   )
  )
  
  (!type user_struct 937 nil  gc_unused "generic_wide_int<wide_int_ref_storage<false,false>>"
-  (!srcfileloc  "tree.h" 5920)
+  (!srcfileloc  "tree.h" 5938)
   (!fields 2 
    (!pair  "false"
     (!type already_seen 860)
-    (!srcfileloc  "tree.h" 5920)
+    (!srcfileloc  "tree.h" 5938)
     nil )
    (!pair  "wide_int_ref_storage<false"
     (!type already_seen 859)
-    (!srcfileloc  "tree.h" 5920)
+    (!srcfileloc  "tree.h" 5938)
     nil )
   )
  )
  
  (!type user_struct 938 nil  gc_unused "poly_int<NUM_POLY_INT_COEFFS,generic_wide_int<widest_extended_tree>>"
-  (!srcfileloc  "tree.h" 5929)
+  (!srcfileloc  "tree.h" 5947)
   (!fields 2 
    (!pair  "generic_wide_int<widest_extended_tree"
     (!type user_struct 939 nil  gc_unused "generic_wide_int<widest_extended_tree"
-     (!srcfileloc  "tree.h" 5929)
+     (!srcfileloc  "tree.h" 5947)
      (!fields 1 
       (!pair  "widest_extended_tree"
        (!type already_seen 933)
-       (!srcfileloc  "tree.h" 5929)
+       (!srcfileloc  "tree.h" 5947)
        nil )
      )
     )
-    (!srcfileloc  "tree.h" 5929)
+    (!srcfileloc  "tree.h" 5947)
     nil )
    (!pair  "NUM_POLY_INT_COEFFS"
     (!type already_seen 896)
-    (!srcfileloc  "tree.h" 5929)
+    (!srcfileloc  "tree.h" 5947)
     nil )
   )
  )
@@ -18340,23 +18340,23 @@
  (!type already_seen 939)
  
  (!type user_struct 940 nil  gc_unused "poly_int<NUM_POLY_INT_COEFFS,generic_wide_int<offset_extended_tree>>"
-  (!srcfileloc  "tree.h" 5932)
+  (!srcfileloc  "tree.h" 5950)
   (!fields 2 
    (!pair  "generic_wide_int<offset_extended_tree"
     (!type user_struct 941 nil  gc_unused "generic_wide_int<offset_extended_tree"
-     (!srcfileloc  "tree.h" 5932)
+     (!srcfileloc  "tree.h" 5950)
      (!fields 1 
       (!pair  "offset_extended_tree"
        (!type already_seen 934)
-       (!srcfileloc  "tree.h" 5932)
+       (!srcfileloc  "tree.h" 5950)
        nil )
      )
     )
-    (!srcfileloc  "tree.h" 5932)
+    (!srcfileloc  "tree.h" 5950)
     nil )
    (!pair  "NUM_POLY_INT_COEFFS"
     (!type already_seen 896)
-    (!srcfileloc  "tree.h" 5932)
+    (!srcfileloc  "tree.h" 5950)
     nil )
   )
  )
@@ -18364,23 +18364,23 @@
  (!type already_seen 941)
  
  (!type user_struct 942 nil  gc_unused "poly_int<NUM_POLY_INT_COEFFS,generic_wide_int<unextended_tree>>"
-  (!srcfileloc  "tree.h" 5935)
+  (!srcfileloc  "tree.h" 5953)
   (!fields 2 
    (!pair  "generic_wide_int<unextended_tree"
     (!type user_struct 943 nil  gc_unused "generic_wide_int<unextended_tree"
-     (!srcfileloc  "tree.h" 5935)
+     (!srcfileloc  "tree.h" 5953)
      (!fields 1 
       (!pair  "unextended_tree"
        (!type already_seen 931)
-       (!srcfileloc  "tree.h" 5935)
+       (!srcfileloc  "tree.h" 5953)
        nil )
      )
     )
-    (!srcfileloc  "tree.h" 5935)
+    (!srcfileloc  "tree.h" 5953)
     nil )
    (!pair  "NUM_POLY_INT_COEFFS"
     (!type already_seen 896)
-    (!srcfileloc  "tree.h" 5935)
+    (!srcfileloc  "tree.h" 5953)
     nil )
   )
  )
@@ -18388,21 +18388,21 @@
  (!type already_seen 943)
  
  (!type user_struct 944 nil  gc_unused "generic_wide_int<extended_tree<N>>"
-  (!srcfileloc  "tree.h" 5945)
+  (!srcfileloc  "tree.h" 5963)
   (!fields 1 
    (!pair  "extended_tree<N"
     (!type user_struct 945 nil  gc_unused "extended_tree<N"
-     (!srcfileloc  "tree.h" 5945)
+     (!srcfileloc  "tree.h" 5963)
      (!fields 1 
       (!pair  "N"
        (!type undefined 946 nil  gc_unused "N"
-        (!srcfileloc  "tree.h" 5945)
+        (!srcfileloc  "tree.h" 5963)
        )
-       (!srcfileloc  "tree.h" 5945)
+       (!srcfileloc  "tree.h" 5963)
        nil )
      )
     )
-    (!srcfileloc  "tree.h" 5945)
+    (!srcfileloc  "tree.h" 5963)
     nil )
   )
  )
@@ -18412,17 +18412,17 @@
  (!type already_seen 946)
  
  (!type user_struct 947 nil  gc_unused "generic_wide_int<unextended_tree>"
-  (!srcfileloc  "tree.h" 5952)
+  (!srcfileloc  "tree.h" 5970)
   (!fields 1 
    (!pair  "unextended_tree"
     (!type already_seen 931)
-    (!srcfileloc  "tree.h" 5952)
+    (!srcfileloc  "tree.h" 5970)
     nil )
   )
  )
  
  (!type user_struct 948 nil  gc_unused "generic_wide_int<wi::extended_tree<WIDE_INT_MAX_PRECISION*2>>"
-  (!srcfileloc  "tree.h" 5959)
+  (!srcfileloc  "tree.h" 5977)
   (!fields 1 
    (!pair  "wi::extended_tree<WIDE_INT_MAX_PRECISION"
     (!type pointer 949 nil  gc_unused
@@ -18432,7 +18432,7 @@
       (!fields 0 )
       nil 0 nil nil )
     )
-    (!srcfileloc  "tree.h" 5959)
+    (!srcfileloc  "tree.h" 5977)
     nil )
   )
  )
@@ -18440,19 +18440,19 @@
  (!type already_seen 950)
  
  (!type undefined 951 nil  gc_unused "typename"
-  (!srcfileloc  "tree.h" 6210)
+  (!srcfileloc  "tree.h" 6228)
  )
  
  (!type struct 952 nil  gc_used "int_n_trees_t"
-  (!srcfileloc  "tree.h" 6295)
+  (!srcfileloc  "tree.h" 6313)
   (!fields 2 
    (!pair  "signed_type"
     (!type already_seen 23)
-    (!srcfileloc  "tree.h" 6293)
+    (!srcfileloc  "tree.h" 6311)
     nil )
    (!pair  "unsigned_type"
     (!type already_seen 23)
-    (!srcfileloc  "tree.h" 6294)
+    (!srcfileloc  "tree.h" 6312)
     nil )
   )
   nil 1023 nil nil )
@@ -25912,9 +25912,39 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1804 nil  gc_unused "aarch64_simd_type_info"nil 
-  (!fields 0 )
-  nil 0 nil nil )
+ (!type struct 1804 nil  gc_used "aarch64_simd_type_info"
+  (!srcfileloc  "config/aarch64/aarch64-builtins.c" 624)
+  (!fields 7 
+   (!pair  "type"
+    (!type already_seen 2)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.c" 598)
+    nil )
+   (!pair  "name"
+    (!type already_seen 11)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.c" 601)
+    nil )
+   (!pair  "mangle"
+    (!type already_seen 11)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.c" 611)
+    nil )
+   (!pair  "itype"
+    (!type already_seen 23)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.c" 614)
+    nil )
+   (!pair  "eltype"
+    (!type already_seen 23)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.c" 617)
+    nil )
+   (!pair  "mode"
+    (!type already_seen 2)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.c" 620)
+    nil )
+   (!pair  "q"
+    (!type already_seen 2)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.c" 623)
+    nil )
+  )
+  nil 1023 nil nil )
  
  (!type struct 1805 nil  gc_unused "builtin_decls_data"nil 
   (!fields 0 )
@@ -29524,15 +29554,15 @@
    (!type already_seen 2199)
   )
   gc_pointed_to "hash_map<tree,tree_pair_p>"
-  (!srcfileloc  "cp/pt.c" 29285)
+  (!srcfileloc  "cp/pt.c" 29297)
   (!fields 2 
    (!pair  "tree_pair_p"
     (!type already_seen 531)
-    (!srcfileloc  "cp/pt.c" 29285)
+    (!srcfileloc  "cp/pt.c" 29297)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "cp/pt.c" 29285)
+    (!srcfileloc  "cp/pt.c" 29297)
     nil )
   )
  )
@@ -30087,19 +30117,19 @@
   nil 0 nil nil )
  
  (!type user_struct 2277 nil  gc_unused "int_hash<unsigned,0,UINT_MAX>"
-  (!srcfileloc  "lto/lto-common.c" 1795)
+  (!srcfileloc  "lto/lto-common.c" 1796)
   (!fields 3 
    (!pair  "UINT_MAX"
     (!type already_seen 1247)
-    (!srcfileloc  "lto/lto-common.c" 1795)
+    (!srcfileloc  "lto/lto-common.c" 1796)
     nil )
    (!pair  "0"
     (!type already_seen 1248)
-    (!srcfileloc  "lto/lto-common.c" 1795)
+    (!srcfileloc  "lto/lto-common.c" 1796)
     nil )
    (!pair  "unsigned"
     (!type already_seen 1677)
-    (!srcfileloc  "lto/lto-common.c" 1795)
+    (!srcfileloc  "lto/lto-common.c" 1796)
     nil )
   )
  )
@@ -30481,11 +30511,11 @@
   nil )
  (!pair  "code_id_hash"
   (!type already_seen 2277)
-  (!srcfileloc  "lto/lto-common.c" 1795)
+  (!srcfileloc  "lto/lto-common.c" 1796)
   nil )
  (!pair  "int_hash<unsigned,0,UINT_MAX>"
   (!type already_seen 2277)
-  (!srcfileloc  "lto/lto-common.c" 1795)
+  (!srcfileloc  "lto/lto-common.c" 1796)
   nil )
  (!pair  "go_char_p"
   (!type already_seen 9)
@@ -30665,7 +30695,7 @@
   nil )
  (!pair  "hash_map<tree,tree_pair_p>"
   (!type already_seen 2199)
-  (!srcfileloc  "cp/pt.c" 29285)
+  (!srcfileloc  "cp/pt.c" 29297)
   nil )
  (!pair  "pending_template"
   (!type already_seen 2186)
@@ -33241,171 +33271,171 @@
   nil )
  (!pair  "poly_int_traits"
   (!type already_seen 951)
-  (!srcfileloc  "tree.h" 6210)
+  (!srcfileloc  "tree.h" 6228)
   nil )
  (!pair  "typename"
   (!type already_seen 951)
-  (!srcfileloc  "tree.h" 6210)
+  (!srcfileloc  "tree.h" 6228)
   nil )
  (!pair  "widest2_int_cst"
   (!type already_seen 948)
-  (!srcfileloc  "tree.h" 5960)
+  (!srcfileloc  "tree.h" 5978)
   nil )
  (!pair  "generic_wide_int<wi::extended_tree<WIDE_INT_MAX_PRECISION*2>>"
   (!type already_seen 948)
-  (!srcfileloc  "tree.h" 5959)
+  (!srcfileloc  "tree.h" 5977)
   nil )
  (!pair  "unextended"
   (!type already_seen 947)
-  (!srcfileloc  "tree.h" 5952)
+  (!srcfileloc  "tree.h" 5970)
   nil )
  (!pair  "generic_wide_int<unextended_tree>"
   (!type already_seen 947)
-  (!srcfileloc  "tree.h" 5952)
+  (!srcfileloc  "tree.h" 5970)
   nil )
  (!pair  "extended"
   (!type already_seen 944)
-  (!srcfileloc  "tree.h" 5945)
+  (!srcfileloc  "tree.h" 5963)
   nil )
  (!pair  "N"
   (!type already_seen 946)
-  (!srcfileloc  "tree.h" 5945)
+  (!srcfileloc  "tree.h" 5963)
   nil )
  (!pair  "extended_tree<N"
   (!type already_seen 945)
-  (!srcfileloc  "tree.h" 5945)
+  (!srcfileloc  "tree.h" 5963)
   nil )
  (!pair  "generic_wide_int<extended_tree<N>>"
   (!type already_seen 944)
-  (!srcfileloc  "tree.h" 5945)
+  (!srcfileloc  "tree.h" 5963)
   nil )
  (!pair  "tree_to_poly_wide_ref"
   (!type already_seen 942)
-  (!srcfileloc  "tree.h" 5936)
+  (!srcfileloc  "tree.h" 5954)
   nil )
  (!pair  "unextended_tree"
   (!type already_seen 931)
-  (!srcfileloc  "tree.h" 5935)
+  (!srcfileloc  "tree.h" 5953)
   nil )
  (!pair  "generic_wide_int<unextended_tree"
   (!type already_seen 943)
-  (!srcfileloc  "tree.h" 5935)
+  (!srcfileloc  "tree.h" 5953)
   nil )
  (!pair  "poly_int<NUM_POLY_INT_COEFFS,generic_wide_int<unextended_tree>>"
   (!type already_seen 942)
-  (!srcfileloc  "tree.h" 5935)
+  (!srcfileloc  "tree.h" 5953)
   nil )
  (!pair  "tree_to_poly_offset_ref"
   (!type already_seen 940)
-  (!srcfileloc  "tree.h" 5933)
+  (!srcfileloc  "tree.h" 5951)
   nil )
  (!pair  "generic_wide_int<offset_extended_tree"
   (!type already_seen 941)
-  (!srcfileloc  "tree.h" 5932)
+  (!srcfileloc  "tree.h" 5950)
   nil )
  (!pair  "poly_int<NUM_POLY_INT_COEFFS,generic_wide_int<offset_extended_tree>>"
   (!type already_seen 940)
-  (!srcfileloc  "tree.h" 5932)
+  (!srcfileloc  "tree.h" 5950)
   nil )
  (!pair  "tree_to_poly_widest_ref"
   (!type already_seen 938)
-  (!srcfileloc  "tree.h" 5930)
+  (!srcfileloc  "tree.h" 5948)
   nil )
  (!pair  "generic_wide_int<widest_extended_tree"
   (!type already_seen 939)
-  (!srcfileloc  "tree.h" 5929)
+  (!srcfileloc  "tree.h" 5947)
   nil )
  (!pair  "poly_int<NUM_POLY_INT_COEFFS,generic_wide_int<widest_extended_tree>>"
   (!type already_seen 938)
-  (!srcfileloc  "tree.h" 5929)
+  (!srcfileloc  "tree.h" 5947)
   nil )
  (!pair  "tree_to_wide_ref"
   (!type already_seen 937)
-  (!srcfileloc  "tree.h" 5921)
+  (!srcfileloc  "tree.h" 5939)
   nil )
  (!pair  "generic_wide_int<wide_int_ref_storage<false,false>>"
   (!type already_seen 937)
-  (!srcfileloc  "tree.h" 5920)
+  (!srcfileloc  "tree.h" 5938)
   nil )
  (!pair  "tree_to_offset_ref"
   (!type already_seen 936)
-  (!srcfileloc  "tree.h" 5919)
+  (!srcfileloc  "tree.h" 5937)
   nil )
  (!pair  "generic_wide_int<offset_extended_tree>"
   (!type already_seen 936)
-  (!srcfileloc  "tree.h" 5919)
+  (!srcfileloc  "tree.h" 5937)
   nil )
  (!pair  "tree_to_widest_ref"
   (!type already_seen 935)
-  (!srcfileloc  "tree.h" 5918)
+  (!srcfileloc  "tree.h" 5936)
   nil )
  (!pair  "generic_wide_int<widest_extended_tree>"
   (!type already_seen 935)
-  (!srcfileloc  "tree.h" 5918)
+  (!srcfileloc  "tree.h" 5936)
   nil )
  (!pair  "offset_extended_tree"
   (!type already_seen 934)
-  (!srcfileloc  "tree.h" 5916)
+  (!srcfileloc  "tree.h" 5934)
   nil )
  (!pair  "extended_tree<ADDR_MAX_PRECISION>"
   (!type already_seen 934)
-  (!srcfileloc  "tree.h" 5916)
+  (!srcfileloc  "tree.h" 5934)
   nil )
  (!pair  "widest_extended_tree"
   (!type already_seen 933)
-  (!srcfileloc  "tree.h" 5915)
+  (!srcfileloc  "tree.h" 5933)
   nil )
  (!pair  "extended_tree<WIDE_INT_MAX_PRECISION>"
   (!type already_seen 933)
-  (!srcfileloc  "tree.h" 5915)
+  (!srcfileloc  "tree.h" 5933)
   nil )
  (!pair  "decl_tree_map"
   (!type already_seen 929)
-  (!srcfileloc  "tree.h" 5587)
+  (!srcfileloc  "tree.h" 5605)
   nil )
  (!pair  "decl_tree_traits"
   (!type already_seen 928)
-  (!srcfileloc  "tree.h" 5587)
+  (!srcfileloc  "tree.h" 5605)
   nil )
  (!pair  "hash_map<tree,tree,decl_tree_traits>"
   (!type already_seen 929)
-  (!srcfileloc  "tree.h" 5587)
+  (!srcfileloc  "tree.h" 5605)
   nil )
  (!pair  "type_tree_cache_map"
   (!type already_seen 926)
-  (!srcfileloc  "tree.h" 5582)
+  (!srcfileloc  "tree.h" 5600)
   nil )
  (!pair  "type_tree_cache_traits"
   (!type already_seen 925)
-  (!srcfileloc  "tree.h" 5582)
+  (!srcfileloc  "tree.h" 5600)
   nil )
  (!pair  "hash_map<tree,tree,type_tree_cache_traits>"
   (!type already_seen 926)
-  (!srcfileloc  "tree.h" 5582)
+  (!srcfileloc  "tree.h" 5600)
   nil )
  (!pair  "decl_tree_cache_map"
   (!type already_seen 923)
-  (!srcfileloc  "tree.h" 5576)
+  (!srcfileloc  "tree.h" 5594)
   nil )
  (!pair  "decl_tree_cache_traits"
   (!type already_seen 922)
-  (!srcfileloc  "tree.h" 5576)
+  (!srcfileloc  "tree.h" 5594)
   nil )
  (!pair  "hash_map<tree,tree,decl_tree_cache_traits>"
   (!type already_seen 923)
-  (!srcfileloc  "tree.h" 5576)
+  (!srcfileloc  "tree.h" 5594)
   nil )
  (!pair  "tree_cache_map"
   (!type already_seen 921)
-  (!srcfileloc  "tree.h" 5570)
+  (!srcfileloc  "tree.h" 5588)
   nil )
  (!pair  "tree_cache_traits"
   (!type already_seen 920)
-  (!srcfileloc  "tree.h" 5570)
+  (!srcfileloc  "tree.h" 5588)
   nil )
  (!pair  "hash_map<tree,tree,tree_cache_traits>"
   (!type already_seen 921)
-  (!srcfileloc  "tree.h" 5570)
+  (!srcfileloc  "tree.h" 5588)
   nil )
  (!pair  "hash_rtx_callback_function"
   (!type already_seen 2)
@@ -34120,7 +34150,7 @@
   (!srcfileloc  "gengtype.c" 5201)
   nil )
 )
-(!variables 738
+(!variables 746
  (!pair  "objc_eh_personality_decl"
   (!type already_seen 23)
   (!srcfileloc  "objc/objc-next-runtime-abi-02.c" 3843)
@@ -34340,14 +34370,14 @@
   nil )
  (!pair  "real_file_decl_data"
   (!type already_seen 319)
-  (!srcfileloc  "lto/lto-common.c" 2694)
+  (!srcfileloc  "lto/lto-common.c" 2695)
   (!options 
    (!option length string  "real_file_count + 1")
   )
  )
  (!pair  "all_file_decl_data"
   (!type already_seen 319)
-  (!srcfileloc  "lto/lto-common.c" 2661)
+  (!srcfileloc  "lto/lto-common.c" 2662)
   (!options 
    (!option length string  "lto_stats.num_input_files + 1")
   )
@@ -35174,28 +35204,28 @@
   nil )
  (!pair  "dguide_cache"
   (!type already_seen 2200)
-  (!srcfileloc  "cp/pt.c" 29285)
+  (!srcfileloc  "cp/pt.c" 29297)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "explicit_specifier_map"
   (!type already_seen 924)
-  (!srcfileloc  "cp/pt.c" 13723)
+  (!srcfileloc  "cp/pt.c" 13735)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "defarg_inst"
   (!type already_seen 924)
-  (!srcfileloc  "cp/pt.c" 13607)
+  (!srcfileloc  "cp/pt.c" 13619)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "last_error_tinst_level"
   (!type already_seen 1981)
-  (!srcfileloc  "cp/pt.c" 10908)
+  (!srcfileloc  "cp/pt.c" 10920)
   nil )
  (!pair  "pending_template_freelist_head"
   (!type already_seen 2187)
@@ -35652,11 +35682,11 @@
   nil )
  (!pair  "dvirt_fn"
   (!type already_seen 23)
-  (!srcfileloc  "cp/class.c" 9713)
+  (!srcfileloc  "cp/class.c" 9730)
   nil )
  (!pair  "abort_fndecl_addr"
   (!type already_seen 23)
-  (!srcfileloc  "cp/class.c" 9712)
+  (!srcfileloc  "cp/class.c" 9729)
   nil )
  (!pair  "enum_to_min_precision"
   (!type already_seen 2040)
@@ -35671,7 +35701,7 @@
   nil )
  (!pair  "default_arg_context"
   (!type already_seen 84)
-  (!srcfileloc  "cp/call.c" 8417)
+  (!srcfileloc  "cp/call.c" 8521)
   nil )
  (!pair  "unemitted_tinfo_decls"
   (!type already_seen 84)
@@ -36064,8 +36094,26 @@
   )
   (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 538)
   nil )
+ (!pair  "aarch64_simd_intXI_type_node"
+  (!type already_seen 23)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.c" 635)
+  nil )
+ (!pair  "aarch64_simd_intCI_type_node"
+  (!type already_seen 23)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.c" 634)
+  nil )
+ (!pair  "aarch64_simd_intOI_type_node"
+  (!type already_seen 23)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.c" 633)
+  nil )
+ (!pair  "aarch64_simd_types"
+  (!type array 2360 nil  gc_used "" 
+   (!type already_seen 1804)
+  )
+  (!srcfileloc  "config/aarch64/aarch64-builtins.c" 628)
+  nil )
  (!pair  "aarch64_builtin_decls"
-  (!type array 2360 nil  gc_used "AARCH64_BUILTIN_MAX" 
+  (!type array 2361 nil  gc_used "AARCH64_BUILTIN_MAX" 
    (!type already_seen 23)
   )
   (!srcfileloc  "config/aarch64/aarch64-builtins.c" 555)
@@ -36075,7 +36123,7 @@
   (!srcfileloc  "omp-general.h" 133)
   nil )
  (!pair  "internal_fn_fnspec_array"
-  (!type array 2361 nil  gc_used "IFN_LAST + 1" 
+  (!type array 2362 nil  gc_used "IFN_LAST + 1" 
    (!type already_seen 23)
   )
   (!srcfileloc  "internal-fn.h" 128)
@@ -36093,7 +36141,7 @@
   (!srcfileloc  "ubsan.c" 1203)
   nil )
  (!pair  "ubsan_ids"
-  (!type array 2362 nil  gc_used "2" 
+  (!type array 2363 nil  gc_used "2" 
    (!type already_seen 2)
   )
   (!srcfileloc  "ubsan.c" 344)
@@ -36126,7 +36174,7 @@
   (!srcfileloc  "asan.c" 432)
   nil )
  (!pair  "shadow_ptr_types"
-  (!type array 2363 nil  gc_used "3" 
+  (!type array 2364 nil  gc_used "3" 
    (!type already_seen 23)
   )
   (!srcfileloc  "asan.c" 429)
@@ -36179,7 +36227,7 @@
   (!srcfileloc  "tree-ssa-alias.h" 178)
   nil )
  (!pair  "free_phinodes"
-  (!type array 2364 nil  gc_used "NUM_BUCKETS - 2" 
+  (!type array 2365 nil  gc_used "NUM_BUCKETS - 2" 
    (!type already_seen 1679)
   )
   (!srcfileloc  "tree-phinodes.c" 70)
@@ -36196,7 +36244,7 @@
   (!srcfileloc  "config/aarch64/aarch64.c" 25592)
   nil )
  (!pair  "aarch64_sls_shared_thunks"
-  (!type array 2365 nil  gc_used "30" 
+  (!type array 2366 nil  gc_used "30" 
    (!type already_seen 23)
   )
   (!srcfileloc  "config/aarch64/aarch64.c" 25591)
@@ -36392,13 +36440,13 @@
   (!srcfileloc  "tree.c" 8544)
   nil )
  (!pair  "nonstandard_boolean_type_cache"
-  (!type array 2366 nil  gc_used "MAX_BOOL_CACHED_PREC + 1" 
+  (!type array 2367 nil  gc_used "MAX_BOOL_CACHED_PREC + 1" 
    (!type already_seen 23)
   )
   (!srcfileloc  "tree.c" 6991)
   nil )
  (!pair  "nonstandard_integer_type_cache"
-  (!type array 2367 nil  gc_used "2 * MAX_INT_CACHED_PREC + 2" 
+  (!type array 2368 nil  gc_used "2 * MAX_INT_CACHED_PREC + 2" 
    (!type already_seen 23)
   )
   (!srcfileloc  "tree.c" 6951)
@@ -36620,8 +36668,8 @@
   (!srcfileloc  "explow.c" 1637)
   nil )
  (!pair  "hard_reg_clobbers"
-  (!type array 2368 nil  gc_used "NUM_MACHINE_MODES" 
-   (!type array 2369 nil  gc_used "FIRST_PSEUDO_REGISTER" 
+  (!type array 2369 nil  gc_used "NUM_MACHINE_MODES" 
+   (!type array 2370 nil  gc_used "FIRST_PSEUDO_REGISTER" 
     (!type already_seen 99)
    )
   )
@@ -37318,25 +37366,25 @@
   (!srcfileloc  "tree-core.h" 2288)
   nil )
  (!pair  "builtin_info"
-  (!type array 2370 nil  gc_used "(int)END_BUILTINS" 
+  (!type array 2371 nil  gc_used "(int)END_BUILTINS" 
    (!type already_seen 967)
   )
   (!srcfileloc  "tree-core.h" 2282)
   nil )
  (!pair  "sizetype_tab"
-  (!type array 2371 nil  gc_used "(int) stk_type_kind_last" 
+  (!type array 2372 nil  gc_used "(int) stk_type_kind_last" 
    (!type already_seen 23)
   )
   (!srcfileloc  "tree-core.h" 2270)
   nil )
  (!pair  "integer_types"
-  (!type array 2372 nil  gc_used "itk_none" 
+  (!type array 2373 nil  gc_used "itk_none" 
    (!type already_seen 23)
   )
   (!srcfileloc  "tree-core.h" 2267)
   nil )
  (!pair  "global_trees"
-  (!type array 2373 nil  gc_used "TI_MAX" 
+  (!type array 2374 nil  gc_used "TI_MAX" 
    (!type already_seen 23)
   )
   (!srcfileloc  "tree-core.h" 2263)
@@ -37350,10 +37398,10 @@
   (!srcfileloc  "tree-core.h" 2247)
   nil )
  (!pair  "int_n_trees"
-  (!type array 2374 nil  gc_used "NUM_INT_N_ENTS" 
+  (!type array 2375 nil  gc_used "NUM_INT_N_ENTS" 
    (!type already_seen 952)
   )
-  (!srcfileloc  "tree.h" 6299)
+  (!srcfileloc  "tree.h" 6317)
   nil )
  (!pair  "stack_limit_rtx"
   (!type already_seen 99)
@@ -37380,8 +37428,8 @@
   (!srcfileloc  "rtl.h" 3801)
   nil )
  (!pair  "const_tiny_rtx"
-  (!type array 2375 nil  gc_used "4" 
-   (!type array 2376 nil  gc_used "(int) MAX_MACHINE_MODE" 
+  (!type array 2376 nil  gc_used "4" 
+   (!type array 2377 nil  gc_used "(int) MAX_MACHINE_MODE" 
     (!type already_seen 99)
    )
   )
@@ -37392,7 +37440,7 @@
   (!srcfileloc  "rtl.h" 3786)
   nil )
  (!pair  "const_int_rtx"
-  (!type array 2377 nil  gc_used "MAX_SAVED_CONST_INT * 2 + 1" 
+  (!type array 2378 nil  gc_used "MAX_SAVED_CONST_INT * 2 + 1" 
    (!type already_seen 99)
   )
   (!srcfileloc  "rtl.h" 3780)
@@ -37410,7 +37458,7 @@
   (!srcfileloc  "coverage.c" 100)
   nil )
  (!pair  "fn_v_ctrs"
-  (!type array 2378 nil  gc_used "GCOV_COUNTERS" 
+  (!type array 2379 nil  gc_used "GCOV_COUNTERS" 
    (!type already_seen 23)
   )
   (!srcfileloc  "coverage.c" 95)
@@ -37418,6 +37466,22 @@
  (!pair  "functions_head"
   (!type already_seen 887)
   (!srcfileloc  "coverage.c" 86)
+  nil )
+ (!pair  "aarch64_bf16_ptr_type_node"
+  (!type already_seen 23)
+  (!srcfileloc  "config/aarch64/aarch64.h" 1271)
+  nil )
+ (!pair  "aarch64_bf16_type_node"
+  (!type already_seen 23)
+  (!srcfileloc  "config/aarch64/aarch64.h" 1270)
+  nil )
+ (!pair  "aarch64_fp16_ptr_type_node"
+  (!type already_seen 23)
+  (!srcfileloc  "config/aarch64/aarch64.h" 1266)
+  nil )
+ (!pair  "aarch64_fp16_type_node"
+  (!type already_seen 23)
+  (!srcfileloc  "config/aarch64/aarch64.h" 1265)
   nil )
  (!pair  "saved_line_table"
   (!type already_seen 690)
