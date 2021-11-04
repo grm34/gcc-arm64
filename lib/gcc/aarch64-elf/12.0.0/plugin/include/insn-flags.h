@@ -437,9 +437,6 @@
 #define HAVE_aarch64_movtilow_tilow (TARGET_FLOAT && (reload_completed || reload_in_progress))
 #define HAVE_add_losym_si (ptr_mode == SImode || Pmode == SImode)
 #define HAVE_add_losym_di (ptr_mode == DImode || Pmode == DImode)
-#define HAVE_ldr_got_small_si (ptr_mode == SImode)
-#define HAVE_ldr_got_small_di (ptr_mode == DImode)
-#define HAVE_ldr_got_small_sidi (TARGET_ILP32)
 #define HAVE_ldr_got_small_28k_si (ptr_mode == SImode)
 #define HAVE_ldr_got_small_28k_di (ptr_mode == DImode)
 #define HAVE_ldr_got_small_28k_sidi (TARGET_ILP32)
@@ -10447,9 +10444,6 @@ extern rtx        gen_aarch64_movtflow_di                            (rtx, rtx);
 extern rtx        gen_aarch64_movtilow_tilow                         (rtx, rtx);
 extern rtx        gen_add_losym_si                                   (rtx, rtx, rtx);
 extern rtx        gen_add_losym_di                                   (rtx, rtx, rtx);
-extern rtx        gen_ldr_got_small_si                               (rtx, rtx, rtx);
-extern rtx        gen_ldr_got_small_di                               (rtx, rtx, rtx);
-extern rtx        gen_ldr_got_small_sidi                             (rtx, rtx, rtx);
 extern rtx        gen_ldr_got_small_28k_si                           (rtx, rtx, rtx);
 extern rtx        gen_ldr_got_small_28k_di                           (rtx, rtx, rtx);
 extern rtx        gen_ldr_got_small_28k_sidi                         (rtx, rtx, rtx);
