@@ -31,9 +31,7 @@
 		       rtx_mode_t (operands[3], SImode)) >= 0)
 #define HAVE_aarch64_movkdi (aarch64_movk_shift (rtx_mode_t (operands[2], DImode), \
 		       rtx_mode_t (operands[3], DImode)) >= 0)
-#define HAVE_aarch64_cpymemdi (TARGET_MOPS)
 #define HAVE_aarch64_movmemdi (TARGET_MOPS)
-#define HAVE_aarch64_setmemdi (TARGET_MOPS)
 #define HAVE_load_pair_sw_sisi (rtx_equal_p (XEXP (operands[3], 0), \
 		 plus_constant (Pmode, \
 				XEXP (operands[1], 0), \
@@ -6920,8 +6918,10 @@
 #define HAVE_movsf 1
 #define HAVE_movdf 1
 #define HAVE_movtf 1
+#define HAVE_aarch64_cpymemdi (TARGET_MOPS)
 #define HAVE_cpymemdi (!STRICT_ALIGNMENT || TARGET_MOPS)
 #define HAVE_movmemdi (TARGET_MOPS)
+#define HAVE_aarch64_setmemdi (TARGET_MOPS)
 #define HAVE_setmemdi (TARGET_SIMD || TARGET_MOPS)
 #define HAVE_extendsidi2 1
 #define HAVE_zero_extendsidi2 1
@@ -10084,9 +10084,7 @@ extern rtx        gen_insv_immsi                                     (rtx, rtx, 
 extern rtx        gen_insv_immdi                                     (rtx, rtx, rtx);
 extern rtx        gen_aarch64_movksi                                 (rtx, rtx, rtx, rtx);
 extern rtx        gen_aarch64_movkdi                                 (rtx, rtx, rtx, rtx);
-extern rtx        gen_aarch64_cpymemdi                               (rtx, rtx, rtx);
 extern rtx        gen_aarch64_movmemdi                               (rtx, rtx, rtx);
-extern rtx        gen_aarch64_setmemdi                               (rtx, rtx, rtx);
 extern rtx        gen_load_pair_sw_sisi                              (rtx, rtx, rtx, rtx);
 extern rtx        gen_load_pair_sw_sfsi                              (rtx, rtx, rtx, rtx);
 extern rtx        gen_load_pair_sw_sisf                              (rtx, rtx, rtx, rtx);
@@ -18060,8 +18058,10 @@ extern rtx        gen_movbf                                          (rtx, rtx);
 extern rtx        gen_movsf                                          (rtx, rtx);
 extern rtx        gen_movdf                                          (rtx, rtx);
 extern rtx        gen_movtf                                          (rtx, rtx);
+extern rtx        gen_aarch64_cpymemdi                               (rtx, rtx, rtx);
 extern rtx        gen_cpymemdi                                       (rtx, rtx, rtx, rtx);
 extern rtx        gen_movmemdi                                       (rtx, rtx, rtx, rtx);
+extern rtx        gen_aarch64_setmemdi                               (rtx, rtx, rtx);
 extern rtx        gen_setmemdi                                       (rtx, rtx, rtx, rtx);
 extern rtx        gen_extendsidi2                                    (rtx, rtx);
 extern rtx        gen_zero_extendsidi2                               (rtx, rtx);
