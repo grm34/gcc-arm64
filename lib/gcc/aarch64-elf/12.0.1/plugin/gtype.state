@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.1 20220417 (Bleeding Edge)")
+(!version  "12.0.1 20220421 (Bleeding Edge)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 226 0
@@ -25456,11 +25456,11 @@
    (!type already_seen 1687)
   )
   gc_pointed_to "hash_map<char*,unsigned>"
-  (!srcfileloc  "cgraphclones.cc" 465)
+  (!srcfileloc  "cgraphclones.cc" 466)
   (!fields 1 
    (!pair  "unsigned"
     (!type already_seen 1398)
-    (!srcfileloc  "cgraphclones.cc" 465)
+    (!srcfileloc  "cgraphclones.cc" 466)
     nil )
   )
  )
@@ -32155,7 +32155,7 @@
   nil )
  (!pair  "hash_map<char*,unsigned>"
   (!type already_seen 1687)
-  (!srcfileloc  "cgraphclones.cc" 465)
+  (!srcfileloc  "cgraphclones.cc" 466)
   nil )
  (!pair  "uid_range_p"
   (!type already_seen 1683)
@@ -36605,7 +36605,7 @@
  )
  (!pair  "clone_fn_ids"
   (!type already_seen 1688)
-  (!srcfileloc  "cgraphclones.cc" 465)
+  (!srcfileloc  "cgraphclones.cc" 466)
   nil )
  (!pair  "aarch64_sls_shared_thunks_needed"
   (!type already_seen 2)
