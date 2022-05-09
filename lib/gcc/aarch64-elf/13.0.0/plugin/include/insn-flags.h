@@ -7053,10 +7053,10 @@
 #define HAVE_xorsignsf3 (TARGET_FLOAT && TARGET_SIMD)
 #define HAVE_xorsigndf3 (TARGET_FLOAT && TARGET_SIMD)
 #define HAVE_aarch64_reload_movcpsfsi ((TARGET_FLOAT) && (ptr_mode == SImode || Pmode == SImode))
-#define HAVE_aarch64_reload_movcpdfsi ((TARGET_FLOAT) && (ptr_mode == SImode || Pmode == SImode))
-#define HAVE_aarch64_reload_movcptfsi ((TARGET_FLOAT) && (ptr_mode == SImode || Pmode == SImode))
 #define HAVE_aarch64_reload_movcpsfdi ((TARGET_FLOAT) && (ptr_mode == DImode || Pmode == DImode))
+#define HAVE_aarch64_reload_movcpdfsi ((TARGET_FLOAT) && (ptr_mode == SImode || Pmode == SImode))
 #define HAVE_aarch64_reload_movcpdfdi ((TARGET_FLOAT) && (ptr_mode == DImode || Pmode == DImode))
+#define HAVE_aarch64_reload_movcptfsi ((TARGET_FLOAT) && (ptr_mode == SImode || Pmode == SImode))
 #define HAVE_aarch64_reload_movcptfdi ((TARGET_FLOAT) && (ptr_mode == DImode || Pmode == DImode))
 #define HAVE_aarch64_reload_movcpv8qisi ((TARGET_FLOAT) && (ptr_mode == SImode || Pmode == SImode))
 #define HAVE_aarch64_reload_movcpv8qidi ((TARGET_FLOAT) && (ptr_mode == DImode || Pmode == DImode))
@@ -18178,10 +18178,10 @@ extern rtx        gen_copysigndf3                                    (rtx, rtx, 
 extern rtx        gen_xorsignsf3                                     (rtx, rtx, rtx);
 extern rtx        gen_xorsigndf3                                     (rtx, rtx, rtx);
 extern rtx        gen_aarch64_reload_movcpsfsi                       (rtx, rtx, rtx);
-extern rtx        gen_aarch64_reload_movcpdfsi                       (rtx, rtx, rtx);
-extern rtx        gen_aarch64_reload_movcptfsi                       (rtx, rtx, rtx);
 extern rtx        gen_aarch64_reload_movcpsfdi                       (rtx, rtx, rtx);
+extern rtx        gen_aarch64_reload_movcpdfsi                       (rtx, rtx, rtx);
 extern rtx        gen_aarch64_reload_movcpdfdi                       (rtx, rtx, rtx);
+extern rtx        gen_aarch64_reload_movcptfsi                       (rtx, rtx, rtx);
 extern rtx        gen_aarch64_reload_movcptfdi                       (rtx, rtx, rtx);
 extern rtx        gen_aarch64_reload_movcpv8qisi                     (rtx, rtx, rtx);
 extern rtx        gen_aarch64_reload_movcpv8qidi                     (rtx, rtx, rtx);
