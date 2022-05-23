@@ -1362,7 +1362,7 @@
 
 /* Define if your assembler supports @gnu_unique_object. */
 #ifndef USED_FOR_TARGET
-/* #undef HAVE_GAS_GNU_UNIQUE_OBJECT */
+#define HAVE_GAS_GNU_UNIQUE_OBJECT 1
 #endif
 
 
@@ -2438,13 +2438,13 @@
 
 /* GNU C Library major version number used on the target, or 0. */
 #ifndef USED_FOR_TARGET
-#define TARGET_GLIBC_MAJOR 0
+#define TARGET_GLIBC_MAJOR 2
 #endif
 
 
 /* GNU C Library minor version number used on the target, or 0. */
 #ifndef USED_FOR_TARGET
-#define TARGET_GLIBC_MINOR 0
+#define TARGET_GLIBC_MINOR 27
 #endif
 
 
